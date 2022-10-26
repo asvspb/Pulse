@@ -101,12 +101,14 @@
         <p class="consultation__heading">Получите бесплатную консультацию<br>
           по подбору пульсометра</p>
         <p class="consultation__txt">Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут</p>
-        <div class="consultation__form">
-          <input class="consultation__input-name" type="text" name="name" placeholder="Ваше имя">
-          <input class="consultation__phone" type="number" name="phone" placeholder="Ваш телефон">
-          <input class="consultation__email" type="email" name="email" placeholder="Ваша почта">
+        <div class="consultant-form-wrapper">
+          <div class="consultation__form">
+            <input class="consultation__input-name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="consultation__phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            <input class="consultation__email" type="email" name="email" placeholder="Ваша почта" required>
+          </div>
         </div>
-        <button class="button lg-btn" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+        <button class="button lg-btn consultation__button" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
       </div>
     </section>
     <!--                          section ///[carousel]                          -->
