@@ -32,7 +32,7 @@
   color: $blackTxt
 
 .benefits__txt
-  padding-top: 1.6rem
+  padding: 1.6rem .5rem
   font-size: 14px
   line-height: 1.2
   font-weight: 300
@@ -81,3 +81,26 @@
 
 .consultation__form > input:focus
   border: 3px solid #888888
+
+/*                                                                            */
+/*                                section ///[carousel]                       */
+/*                                                                            */
+
+.carousel
+  padding: 5rem 0
+  margin: 0 auto
+  .slick-prev, .slick-next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    background-color: $whiteTxt
+    cursor: pointer
+  .slick-prev
+    left: -66px
+  .slick-next
+    right: -66px
+    img
+      width: 30px
+      height: 50px
+.carousel__img-wrapper > img
+  margin: 0 auto
