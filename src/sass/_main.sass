@@ -133,6 +133,7 @@
     font-size: 18px
     text-align: center
     text-transform: uppercase
+    border-radius: 5px
     &:hover
       border: 2px solid #8f8f8f
   &__tab--active
@@ -147,26 +148,57 @@
   &__tab > p
     transform: skewX(25deg)
 
-.catalog
-
-  &__products
-
+.catalog__products
+  margin-top: 60px
 .product-item
-
+  padding: 20px 20px 27px 20px
+  width: 300px
+  min-height: 440px
+  border: 2px solid #E8E8E8
+  border-radius: 5px
   &__image
+    display: block
+    margin: 0 auto
 
   &__heading
-
+    margin-top: 15px
+    text-align: center
+    font-size: 16px
+    line-height: 1.2
+    font-weight: 700
+    color: $blackTxt
   &__discr
-
+    margin-top: 1rem
+    font-weight: 300
+    font-size: 14px
+    text-align: center
   &__link
-
+    margin-top: 10px
+    display: block
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    color: $redBg
+    &:hover
+      text-decoration-line: underline
+      color: $redBg
   &__divider
-
+    margin-top: 17px
+    border-top: 1px solid #E8E8E8
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 17px
   &__prices
 
   &__old-price
-
+    font-weight: 300
+    font-size: 14px
+    text-decoration-line: line-through
+    color: #555555
   &__new-price
-
+    font-weight: 700
+    font-size: 20px
+    color: $blackTxt
   &__btn

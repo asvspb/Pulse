@@ -14,9 +14,6 @@ $(document).ready(function () {
       }
     ],
   });
-  $(".catalog__tab").click(function(){
-    $(this).addClass('.catalog__tab--active').alert('X');
-  });
 
 });
 
