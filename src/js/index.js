@@ -1,4 +1,7 @@
 $(document).ready(function () {
+/*                                                                            */
+/*                                   slider                                   */
+/*                                                                            */
   $('.carousel__items').slick({
     speed: 1200,
     autoplay: true,
@@ -10,11 +13,29 @@ $(document).ready(function () {
         breakpoint: 992,
         settings: {
           arrows: false,
-          }
+        }
       }
     ],
   });
+/*                                                                            */
+/*                                 tab-acivity                                 */
+/*                                                                            */
+  $( '.catalog__tab' ).click( function () {
+    $( this ).toggleClass('catalog__tab--active');
+  });
+
+/*                                                                            */
+/*                                 card swing                                 */
+/*                                                                            */
+  function toggleCard( item ) {
+    $( item ).each( function(i) {
+      $( this ).on('click', function(e) {
+        $( '.product-item__core-item' ).eq(i).toggleClass( 'visually-hidden' );
+        $( '.product-item__list-item' ).eq(i).toggleClass( 'visually-hidden' );
+      });
+    });
+  }
+  toggleCard( '.product-item__core-item' );
+  toggleCard( '.product-item__list-item' );
 
 });
-
-

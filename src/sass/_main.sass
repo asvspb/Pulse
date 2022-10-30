@@ -149,7 +149,12 @@
     transform: skewX(25deg)
 
 .catalog__products
+  display: flex
+  gap: 20px
+  flex-wrap: wrap
   margin-top: 60px
+.product-wrapper
+  display: flex
 .product-item
   padding: 20px 20px 27px 20px
   width: 300px
@@ -178,6 +183,8 @@
     font-size: 14px
     text-align: center
     color: $redBg
+    cursor: pointer
+    text-transform: uppercase
     &:hover
       text-decoration-line: underline
       color: $redBg
@@ -198,3 +205,39 @@
     font-weight: 700
     font-size: 20px
     color: $blackTxt
+  &__slider
+    min-height: 327.4px
+  &__list-item
+    min-height: 327.4px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+.list-item
+  &__back
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    color: $redBg
+    text-transform: uppercase
+    cursor: pointer
+    &:hover
+      color: $redBg
+      text-decoration-line: underline
+  &__list
+    padding: 0 0 0 15px
+    list-style-type: none
+    font-size: 14px
+    font-weight: 300
+    color: #555555
+  &__paragraph
+    position: relative
+    margin-top: 10px
+    &:before
+      content: ''
+      position: absolute
+      top: 8px
+      left: -20px
+      width: 7px
+      height: 7px
+      background-color: #cb2d2d
