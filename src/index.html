@@ -319,7 +319,7 @@
       </div>
     </section>
     <!--                          section ///[review]                           -->
-    <section class="review"></section>
+    <section class="review">
       <h2 class="review__header">отзывы клиентов</h2>
       <div class="container">
         <div class="review__item">
@@ -352,11 +352,26 @@
           </div>
         </div>
       </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="contacts">
+    <h2 class="visually-hidden">Контактные данные</h2>
     <!--                          section ///[contacts]                          -->
+    <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.363940647813!2d37.64374516135631!3d5576955074143202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCAxMDcwNzg!5e0!3m2!1sru!2sru!4v1667197635589!5m2!1sru!2sru" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contacts__info">
+      <p class="contacts__info-txt">Москва, Мясницкий проезд, д.3с1</p>
+      <a href="tel:+74999228974" class="contacts__info-tel">8 (499) 922-89-74</a>
+      <div class="contacts__info-icons">
+        <div class="contacts__img"><img class="contacts__ico" src="./img/svg/facebook.svg" alt="facebook"></div>
+        <div class="contacts__img"><img class="contacts__ico" src="./img/svg/instagram.svg" alt="instagram"></div>
+        <div class="contacts__img"><img class="contacts__ico" src="./img/svg/pinterest.svg" alt="pinterest"></div>
+      </div>
+    </div>
   </footer>
+<!--                                                                         -->
+<!--                          section ///[scripts]                           -->
+<!--                                                                         -->
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

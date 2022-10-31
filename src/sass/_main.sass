@@ -257,7 +257,7 @@
   &__item
     display: flex
     align-items: flex-start
-    gap: 62px
+    gap: 45px
     padding: 10px
     &:not(:first-child)
       margin-top: 50px
@@ -275,9 +275,58 @@
     font-size: 14px
     font-weight: 300
     color: #646464
-    margin-top: 5px
   &__txt-body
     margin-top: 15px
     font-size: 16px
     font-weight: 300
+    text-align: justify
     color: $blackTxt
+
+/*                                                                            */
+/*                            section ///[contacts]                            */
+/*                                                                            */
+.contacts
+  position: relative
+  min-height: 630px
+  margin-top: 70px
+  &__google-map
+    width: 100%
+    min-height: 630px
+  &__info
+    @include abs-center
+    padding: 50px 64px 60px 64px
+    max-width: 460px
+    min-height: 270px
+    background-color: $redBg
+    border-radius: 5px
+    text-align: center
+    font-size: 20px
+    line-height: 20px
+    color: $whiteTxt
+  &__info-txt
+    font-weight: 500
+  &__info-tel
+    display: block
+    font-weight: 700
+    margin-top: 36px
+    &:hover
+      text-decoration: underline
+  &__info-icons
+    display: flex
+    justify-content: center
+    gap: 27px
+    margin-top: 38px
+  &__img
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 52px
+    height: 52px
+    border: 2px solid #ffffff
+    border-radius: 50%
+  &__ico
+    display: block
+    width: 24px
+    height: 24px
+    &:hover
+      cursor: pointer
