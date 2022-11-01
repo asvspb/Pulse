@@ -96,7 +96,7 @@
       </div>
     </section>
     <!--                        section ///[consultation]                        -->
-    <section class="consultation">
+    <section class="consultation" id="consultation">
       <h2 class="visually-hidden">Бесплатные консультации</h2>
       <div class="container">
         <p class="consultation__heading">Получите бесплатную консультацию<br>
@@ -353,6 +353,24 @@
         </div>
       </div>
     </section>
+
+    <!--                           section ///[modal]                            -->
+    <section class="modal">
+      <h2 class="visually-hidden">Modal popup</h2>
+      <div class="modal__overlay">
+        <div class="modal__form-callback">
+          <div class="consultation__form modal__form-callback">
+            <input class="consultation__input-name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="consultation__phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            <input class="consultation__email" type="email" name="email" placeholder="Ваша почта" required>
+            <button class="button lg-btn consultation__button" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+          </div>
+        </div>
+        <div class="modal__form-order"></div>
+        <div class="modal__gratitude"></div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="contacts">
@@ -369,9 +387,8 @@
       </div>
     </div>
   </footer>
-<!--                                                                         -->
+
 <!--                          section ///[scripts]                           -->
-<!--                                                                         -->
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

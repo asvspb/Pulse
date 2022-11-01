@@ -29,6 +29,11 @@
       flex-direction: column
       flex-wrap: wrap
       align-items: center
+  .review
+    &__item
+      gap: 10px
+      &:first-child
+        margin-top: 30px
 
 /*                                   ///[≥576px]                              */
 
@@ -41,8 +46,9 @@
   .promo-main-section
     justify-content: center
   .promo__txt
+    padding: 0 10px
     text-align: center
-    font-size: 38px
+    font-size: 33px
   .promo__icons
     justify-content: center
     gap: 15px
@@ -59,7 +65,9 @@
     margin-bottom: 0
 
   .consultation
-    padding: 2rem
+    padding: 3.25rem 0
+    &__heading
+      font-size: 35px
   .consultation__heading,
   .consultation__txt
     text-align: center
@@ -79,12 +87,16 @@
     &__item
       flex-direction: column
       align-items: center
-    &__txt-name
-      text-align: center
-    &__txt-about
       text-align: center
     &__txt-body
       text-align: justify
+    &:not(:first-child)
+      margin-top: 50px
+    &:not(:last-child)
+      padding-bottom: 0
+
+  .review__item:not(:last-child)
+    padding-bottom: 0
 
   .contacts
     &__info
