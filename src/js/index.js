@@ -38,4 +38,10 @@ $(document).ready(function () {
   toggleCard( '.product-item__core-item' );
   toggleCard( '.product-item__list-item' );
 
+/*                                                                            */
+/*                                    modal                                   */
+/*                                                                            */
+
+
+
 });
