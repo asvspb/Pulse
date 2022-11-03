@@ -36,7 +36,7 @@
           </div>
           <div class="header__phones">
             <a class="header__phone-link" href="tel:+74999228974">+7 (499) 922-89-74</a>
-            <button class="button sm-btn" type="button">заказать звонок</button>
+            <button class="button sm-btn" type="button" data-modal="consult-modal">заказать звонок</button>
           </div>
         </section>
         <section class="promo-main-section">
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="promo__button-wrapper">
-            <button class="button lg-btn" type="button">заказать звонок</button>
+            <button class="button lg-btn" type="button" data-modal="consult-modal">заказать звонок</button>
             <p>или <a class="promo__catalog-link"  href="#">ПЕРЕЙТИ В КАТАЛОГ</a></p>
           </div>
         </section>
@@ -106,7 +106,7 @@
           <div class="consultation__form">
             <input class="consultation__input-name" type="text" name="name" placeholder="Ваше имя" required>
             <input class="consultation__phone" type="number" name="phone" placeholder="Ваш телефон" required>
-            <input class="consultation__email" type="email" name="email" placeholder="Ваша почта" required>
+            <input class="consultation__email" type="email" name="email" placeholder="Ваш E-mail" required>
             <button class="button lg-btn consultation__button" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
           </div>
         </div>
@@ -358,16 +358,41 @@
     <section class="modal">
       <h2 class="visually-hidden">Modal popup</h2>
       <div class="modal__overlay">
-        <div class="modal__form-callback">
-          <div class="consultation__form modal__form-callback">
-            <input class="consultation__input-name" type="text" name="name" placeholder="Ваше имя" required>
-            <input class="consultation__phone" type="number" name="phone" placeholder="Ваш телефон" required>
-            <input class="consultation__email" type="email" name="email" placeholder="Ваша почта" required>
-            <button class="button lg-btn consultation__button" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+        <div class="modal__form-call">
+          <div class="form">
+            <span data-modal="close-modal">&times;</span>
+            <div class="form__txt-wrapper">
+              <p class="form__header">Просто заполните форму заявки</p>
+              <p class="form__subheader">и мы перезвоним вам в течении 10 минут</p>
+            </div>
+            <input class="form__input-name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="form__phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            <input class="form__email" type="email" name="email" placeholder="Ваш E-mail" required>
+            <div class="btn-wrp"><button class="button lg-btn consultation__button" type="submit">заказать кОНСУЛЬТАЦИЮ</button></div>
           </div>
         </div>
-        <div class="modal__form-order"></div>
-        <div class="modal__gratitude"></div>
+        <div class="modal__form-order">
+          <div class="form">
+            <span data-modal="close-modal">&times;</span>
+            <div class="form__txt-wrapper">
+              <p class="form__header">Ваш заказ:</p>
+              <p class="form__subheader">Пульсометр Polar FT1</p>
+            </div>
+            <input class="form__input-name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="form__phone" type="number" name="phone" placeholder="Ваш телефон" required>
+            <input class="form__email" type="email" name="email" placeholder="Ваш E-mail" required>
+            <div class="btn-wrp"><button class="button lg-btn consultation__button" type="submit" data-modal="close-modal">Купить</button></div>
+          </div>
+        </div>
+        <div class="modal__gratitude">
+          <div class="form form--gratitude">
+            <span>&times;</span>
+            <div class="form__wrapper">
+              <p class="form__header">Ваш Спасибо за вашу заявку!</p>
+              <p class="form__subheader">Наш менеджер свяжется с Вами<br> в ближайшее время!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 /*                                                                            */
-/*                                   slider                                   */
+/*                                   slider-gallery                           */
 /*                                                                            */
   $('.carousel__items').slick({
     speed: 1200,
@@ -18,14 +18,14 @@ $(document).ready(function () {
     ],
   });
 /*                                                                            */
-/*                                 tab-acivity                                 */
+/*                                 tab-acivity                                */
 /*                                                                            */
   $( '.catalog__tab' ).click( function () {
     $( this ).toggleClass('catalog__tab--active');
   });
 
 /*                                                                            */
-/*                                 card swing                                 */
+/*                                 card-swing                                 */
 /*                                                                            */
   function toggleCard( item ) {
     $( item ).each( function(i) {
@@ -37,5 +37,24 @@ $(document).ready(function () {
   }
   toggleCard( '.product-item__core-item' );
   toggleCard( '.product-item__list-item' );
+
+/*                                                                            */
+/*                                modal-windows                               */
+/*                                                                            */
+
+  $( '[data-modal=consult-modal]' ).click( function() {
+    $( '.modal__overlay, .modal__form-call' ).fadeIn();
+  });
+
+  $( '[data-modal=close-modal]' ).click( function() {
+    $( '.modal__overlay, .modal__form-call, .modal__form-order' ).fadeOut('slow');
+  });
+
+  $( '.md-btn' ).each(function(i) {
+    $( this ).click( function() {
+      $( '.modal__form-order .form__subheader' ).text($('.product-item__heading').eq(i).text());
+      $( '.modal__overlay, .modal__form-order' ).fadeIn();
+    });
+  });
 
 });
