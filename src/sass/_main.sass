@@ -71,6 +71,21 @@
     width: 300px
   &__email
     margin-bottom: 20px
+  .error
+    border: 2px solid red
+  label.error
+    border: none
+    text-align: center
+    font-size: 12px
+    color: red
+    line-height: 12px
+    margin-top: -12px
+  label#email-error
+    text-align: center
+    font-size: 12px
+    color: red
+    line-height: 12px
+    margin-top: -32px
 
 .consultation__form > input
   font-family: sans-serif
@@ -79,7 +94,7 @@
   padding: 18px 20px
 
 .consultation__form > input:focus
-  border: 3px solid #888888
+  border: 2px solid #888888
 
 /*                                                                            */
 /*                                section ///[carousel]                       */
@@ -350,9 +365,12 @@
     width: 100%
     height: 100%
     z-index: 1
+  .error
+    border: 1px solid red
 .btn-wrp
   width: 100%
   margin-top: 20px
+
 .form
   @include abs-center-full
   padding: 40px 25px 40px

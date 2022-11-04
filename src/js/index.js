@@ -57,5 +57,35 @@ $(document).ready(function () {
     });
   });
 
-  
+/*                                                                            */
+/*                               form-validator                               */
+/*                                                                            */
+
+  $( '#consult-form' ).validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3
+      },
+      phone: "required",
+      email: {
+        required: true,
+        email: true,
+      },
+    },
+    messages: {
+      name: {
+        required: "Пожалуйста, введите свое имя",
+        minlength: jQuery.validator.format("В имени должно быть не менее {0} символов")
+      },
+      phone: "Введите номер телефона в международном формате",
+      email: {
+        required: "Пожалуйста, введите свою почту",
+        email: "Введите почтовый адрес в формате name@server",
+      },
+    },
+  });
+  $( '#consultation-modal' ).validate();
+  $( '#order-modal' ).validate();
+
 });
